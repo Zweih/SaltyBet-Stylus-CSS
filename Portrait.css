@@ -1,0 +1,46 @@
+@-moz-document domain(saltybet.com) {
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative !important;
+        padding-top: 600px;
+        overflow: auto !important;
+    }
+    #wrapper > div {
+        position: relative;
+    }
+    #chat-wrapper {
+        visibility: hidden !important;
+        height: 0px !important;
+    }
+    #stream {
+        height: 600px !important;
+        max-width: initial !important;
+        float: left !important;
+        position: absolute !important;
+        top: 42px !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+        order: 1;
+    }
+    
+    #bottomcontent {
+        width: 100% !important;
+        bottom: 0 !important;
+        top: 42px !important;
+        order: 2;
+/*         overflow: visible;                                     */
+    }
+    #footer {
+        top: 42px !important;
+        width: 100% !important;                                    
+        order: 3;
+	}
+    #sbettorswrapper {
+        width: 100% !important;
+        height: 600px !important;
+        float: left !important;
+        z-index: 1000;
+        order: 4;
+    }
+}
